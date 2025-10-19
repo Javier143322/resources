@@ -1,1 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mega Mercado</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="market-container" class="hidden">
+        <div class="header">
+            <h1 id="market-name">Mega Mercado</h1>
+            <div class="player-info">
+                <span id="player-money">$0</span>
+                <button id="close-btn" class="close-btn">X</button>
+            </div>
+        </div>
 
+        <div class="categories-container">
+            <div class="categories-scroll">
+                <button class="category-btn active" data-category="all">Todos</button>
+                <button class="category-btn" data-category="carnes">🥩 Carnes</button>
+                <button class="category-btn" data-category="pescados_mariscos">🐟 Pescados</button>
+                <button class="category-btn" data-category="verduras">🥬 Verduras</button>
+                <button class="category-btn" data-category="frutas">🍎 Frutas</button>
+                <button class="category-btn" data-category="lacteos">🥛 Lácteos</button>
+                <button class="category-btn" data-category="panaderia">🍞 Panadería</button>
+                <button class="category-btn" data-category="bebidas">🥤 Bebidas</button>
+                <button class="category-btn" data-category="granos_cereales">🌾 Granos</button>
+                <button class="category-btn" data-category="snacks_dulces">🍫 Snacks</button>
+            </div>
+        </div>
+
+        <div class="products-container">
+            <div id="products-grid" class="products-grid"></div>
+        </div>
+
+        <div class="cart-container">
+            <div class="cart-header">
+                <h3>Tu Carrito</h3>
+                <span id="cart-total">$0.00</span>
+            </div>
+            <div id="cart-items" class="cart-items"></div>
+            <div class="cart-actions">
+                <button id="clear-cart" class="btn-secondary">Vaciar</button>
+                <button id="buy-btn" class="btn-primary">Comprar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
